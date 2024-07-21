@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>באלאנס - חנות</title>
+    <meta name="description" content="החנות האינטרנטית של באלאנס" />
+    <meta name="keywords" content="חנות, מתנה, הזמנה, חולצה" />
+    <meta name="author" content="שובל גרבלי,בר יפרח,יובל קלברינו,רוני שטח" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link rel="icon" href="images/lady.png" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+    <div id="contactUs">
+        <header>
+            <nav aria-label="mainNav" class="mainNav">
+                <ul>
+                    <li><a class="navLinks" href="index.html"> <img id="logo" src="images/logo.png" alt="באלאנס לוגו" /></a></li>
+                    <li>
+                        <a href="#" class="notActive navLinks">האימונים שלנו </a>
+
+                        <ul>
+                            <li><a class="navLinks" href="pilatis.html"> פילאטיס</a></li>
+                            <li class="notActive"><a class="navLinks notActive" href="#">עיצוב וחיטוב</a></li>
+                            <li class="notActive"><a class="navLinks notActive" href="#">יוגה</a></li>
+                            <li class="notActive"><a class="navLinks notActive" href="#">אירובי</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navLinks" href="#"> מערכת שעות </a>
+                        <ul>
+                            <li class="notActive"><a href="#" class="notActive navLinks">שעות פעילות</a></li>
+                            <li class="notActive"><a href="#" class="notActive navLinks">לוח חוגים</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="notActive navLinks">ליווי אישי</a>
+                        <ul>
+                            <li class="notActive"><a href="#" class="notActive navLinks">תוכנית אימונים</a></li>
+                            <li class="notActive"><a href="#" class="notActive navLinks">ייעוץ תזונתי</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navLinks" href="ourTeams.html">הצוות שלנו</a>
+
+                    </li>
+                    <li>
+                        <a class="navLinks" href="ourShop.html">חנות</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="pagesH1">החנות שלנו</h1>
+
+            <nav aria-label="breadCrumbsNav" class="BreadcrumbsNav">
+                <ol>
+                    <li><a href="index.html">דף הבית </a></li>
+                    <li>החנות שלנו</li>
+                </ol>
+            </nav>
+
+            <h2 class="pagesH2"> זה הזמן שלך להתפנק!</h2> <br />
+            
+
+            <form id="shop" onsubmit="alertMessege()">
+                שדה המסומן ב-(*) הינו שדה חובה <br /> <br />
+                <fieldset id="ourProducts">
+                    <legend>*המוצרים שלנו</legend>
+                    <label>
+                        <label>
+                            <input class="productsCheckbox" type="checkbox" name="products" value="weights" onclick="productsOpacity()">
+                            זוג משקולות יד - ₪50
+                        </label><br>
+                        <label>
+                            <input class="productsCheckbox" type="checkbox" name="products" value="bottle" onclick="productsOpacity()">
+                            בקבוק מים - ₪20
+                        </label><br>
+                        <input class="productsCheckbox" type="checkbox" name="products" value="mat" onclick="productsOpacity()">
+                        מזרן יוגה - ₪70
+                    </label><br>
+                            <label>
+                                <input class="productsCheckbox" type="checkbox" name="products" value="rope" onclick="productsOpacity()">
+                                חבל קפיצה - ₪20
+                            </label><br>
+                                    <label>
+                                        <input class="productsCheckbox" type="checkbox" name="products" value="towel" onclick="productsOpacity()">
+                                        מגבת - ₪30
+                                    </label><br>
+                                            <label>
+                                                <input class="productsCheckbox" type="checkbox" name="products" value="ball" onclick="productsOpacity()">
+                                                כדור אימון - ₪30
+                                            </label><br>
+
+                </fieldset>
+                
+                <p><strong>מתנה מיוחדת מאיתנו עבור המזמינות באתר בלבד - חולצת ספורט ממותגת!</strong> <br />
+
+                נא בחרי צבע ומידה</p>
+
+                <fieldset>
+                    <legend>מידה</legend>
+                    <label>
+                        <input id="XS" type="radio" name="size" value="XS" onclick="changeSizePicOpacity('XS')">
+                        XS
+                    </label><br>
+                    <label>
+                        <input type="radio" name="size" value="S" onclick="changeSizePicOpacity('S')">
+                        S
+                    </label><br>
+                    <label>
+                        <input type="radio" name="size" value="M" onclick="changeSizePicOpacity('M')">
+                        M
+                    </label><br>
+                    <label>
+                        <input type="radio" name="size" value="L" onclick="changeSizePicOpacity('L')">
+                        L
+                    </label><br>
+                    <label>
+                        <input type="radio" name="size" value="XL" onclick="changeSizePicOpacity('XL')">
+                        XL
+                    </label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>צבע החולצה</legend>
+                    <label>
+                        <input type="radio" name="shirt_color" value="pink" onclick="shirtColor('pink')">
+                        ורוד
+                    </label><br>
+                    <label>
+                        <input type="radio" name="shirt_color" value="orange" onclick="shirtColor('orange')">
+                        כתום
+                    </label><br>
+                    <label>
+                        <input type="radio" name="shirt_color" value="green" onclick="shirtColor('green')">
+                        ירוק
+                    </label><br>
+                    <label>
+                        <input type="radio" name="shirt_color" value="blue" onclick="shirtColor('blue')">
+                        כחול
+                    </label><br>
+                    <label>
+                        <input type="radio" name="shirt_color" value="black" onclick="shirtColor('black')">
+                        שחור
+                    </label><br>
+                </fieldset>
+
+                <p><strong>פרטים להזמנה</strong></p>
+
+                <label for="full_name">*שם מלא:</label><br>
+                <input type="text" id="full_name" class="squares" name="full_name" required oninput="onFullNameChange(this.value)" ><br><br>
+
+                <label for="additional_info">פרטים נוספים:</label><br>
+                <textarea id="additional_info" class="squares" name="additional_info" rows="5"></textarea><br><br>
+
+                <input type="submit" id="submitButton"  value="בצעי הזמנה" disabled>
+            </form>
+
+            <section id="products">
+                <section class="rows">
+                    <img id="img_weights" class="products" src="images/shop/weights.png" alt="weights" />
+                    <img id="img_bottle" class="products"  src="images/shop/bottle.png" alt="Water bottle" />
+                    <img id="img_mat" class="products" src="images/shop/mat.png" alt="Yoga matress" />
+                </section>
+                <section class="rows">
+                    <img id="img_rope" class="products"  src="images/shop/rope.png" alt="rope" />
+                    <img id="img_towel" class="products" src="images/shop/towel.png" alt="towel" />
+                    <img id="img_ball" class="products"  src="images/shop/ball.png" alt="ball" />
+
+                </section>
+    
+
+            </section>
+
+            <section id="size">
+                <img id="img_XS" class="size_img" src="images/shop/XS.png" alt="XS">
+                <img id="img_S" class="size_img" src="images/shop/S.png" alt="S"/>
+                <img id="img_M" class="size_img" src="images/shop/M.png" alt="M"/>
+                <img id="img_L" class="size_img" src="images/shop/L.png" alt="L"/>
+                <img id="img_XL" class="size_img" src="images/shop/XL.png" alt="XL"/>
+            </section>
+
+            <section id="shirts">
+                <img id="pink_shirt" class="shirt_img" src="images/shop/pinkShirt.png" alt="Pink shirt" />
+                <img id="black_shirt" class="shirt_img" src="images/shop/blackShirt.png" alt="Black shirt"/>
+                <img id="blue_shirt" class="shirt_img" src="images/shop/blueShirt.png" alt="Blue shirt"/>
+                <img id="green_shirt" class="shirt_img" src="images/shop/greenShirt.png" alt="Green shirt"/>
+                <img id="orange_shirt" class="shirt_img" src="images/shop/orangeShirt.png" alt="Orange shirt"/>
+            </section>
+
+        </main>
+
+        <footer id="footer">
+            <nav aria-label="footerNav" class="footerNav">
+                <ul>
+                    <li><a class="navLinks navFooterLinks" href="about.html">אודות</a></li>
+                    <li><a class="navLinks navFooterLinks" href="siteMap.html">מפת האתר</a></li>
+                    <li><a class="navLinks navFooterLinks" href="contactUs.html">צרי קשר</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,704 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* כללי */
+
+body {
+    direction: rtl;
+    font-family: Rubik;
+    width: 1280px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: #F4F0EE;
+    position:relative;
+}
+
+a, a:visited{
+    color: #333333;
+}
+
+a:hover {
+    font-weight:bold;
+}
+
+ a:active {
+     color: #B57352;
+ }
+
+.pagesH1 {
+    position: relative;
+    right: 37px;
+    top: 60px;
+    color: #B57352;
+    font-size: 2vw;
+}
+
+.pagesH2 {
+    color: #333333;
+    font-size: 2vw;
+    font-weight: bold;
+    position: relative;
+}
+
+h3 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+ p {
+     line-height: 150%;
+ }
+
+.notActive {
+    cursor: not-allowed;
+    color: gray;
+}
+
+#contactUsButton {
+    position: fixed;
+    left: 10px;
+    top: 480px;
+    z-index: 3;
+    background-color: #B57352;
+    color: #F4F0EE;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#contactUsButton:hover {
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 1.5vw;
+    transition: 0.5s;
+}
+
+
+
+/* תפריט ניווט עליון - header */
+
+.mainNav {
+    position: fixed;
+    background-color: #F4E9E3;
+    width: 1280px;
+    height: 60px;
+    top: 0;
+    z-index: 2;
+    filter: drop-shadow(0.5px 1px 1px #666);
+}
+
+nav ul li {
+    color: #333333;
+    position: relative;
+    margin-left: 40px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    width: 110px;
+    height: 40px;
+
+}
+
+    nav ul li a {
+        display: block;
+        width: 110px;
+        height: 40px;
+        padding-top: 10px;
+        text-decoration: none;
+        position: relative;
+        text-align: center; 
+    }
+
+.mainNav ul li ul {
+    border-radius: 0 0 15px 15px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+
+.mainNav ul li:hover ul {
+    display: block;
+    background-color: #F4E9E3;
+    width: 100%;
+}
+
+#logo {
+    width: 60px;
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+}
+
+ul {
+    display: inline-block;
+    margin-right: 160px;
+}
+
+.navLinks:link {
+    color: #624333;
+}
+
+.navLinks:visited {
+    color: #624333;
+}
+
+.navLinks:hover {
+    font-weight: bold;
+    color: #624333;
+}
+
+/* תפריט תחתון - footer */
+
+#footer {
+    background-color: #F4E9E3;
+    width: 1280px;
+    position: absolute;
+    box-shadow: 0 -0.5px 1px #666;
+    margin-top: 260px;
+}
+
+.footerNav {
+    position: relative;
+    right: 180px;
+}
+
+.navFooterLinks {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* תפריט פירורי לחם - breadCrumbs */
+
+.BreadcrumbsNav ol li {
+    display: inline-block;
+    position: relative;
+    top: 50px;
+}
+
+.BreadcrumbsNav ol li:after {
+    content: ">";
+}
+
+.BreadcrumbsNav ol li:last-child:after {
+    content: "";
+}
+
+/* דף הבית - index */
+
+#head {
+    text-align: center;
+    height: 300px;
+    position: relative;
+}
+
+#studioImage {
+    height: auto;
+    max-height: 500px;
+    width: 100%;
+    filter: drop-shadow(0.5px 1px 1px #666);
+}
+
+#headText {
+    position: relative;
+    bottom: 350px;
+    height: 70px;
+    color: #F4F0EE;
+}
+
+#firstTitle {
+    font-size: 5vw;
+    height: 40px;
+}
+
+
+#button {
+    height: 80px;
+    background-color: #B0714E;
+    border-radius: 15px;
+    color: #F4F0EE;
+    padding: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 1.5vw;
+    text-decoration: none;
+    transition: 0.3s;
+    filter: drop-shadow(0.5px 1px 1px #666);
+}
+
+    #button:hover {
+        background-color: #F4E9E3;
+        color: #B57352;
+        transition: 0.3s;
+    }
+
+#WhyUs {
+    position: relative;
+    top: 150px;
+    color: #333333;
+    height: 200px;
+    padding: 50px;
+}
+
+ #WhyUs h3 {
+    position: relative;
+    top: 70px;
+    text-align: right;
+    padding-right: 50px;
+ }
+
+#textWhyUs {
+    width: 550px;
+    padding:50px;
+    height:500px;
+    position:relative;
+    bottom: 15px;
+    
+}
+
+#WhyUsImage {
+    float: left;
+    height: 300px;
+    margin-left: 90px;
+    filter: drop-shadow(0.5px 1px 1px #666);
+}
+
+#ourBenefits {
+    position: relative;
+    right: 120px;
+    top: 100px;
+    color: #333333;
+    padding: 40px;
+    margin-top: 200px;
+    padding-bottom: 80px;
+}
+
+#ourBenefits h3 {
+    position: relative;
+    left: 140px;
+}
+
+.benefits {
+    text-align: center;
+    background-color: #B0714E;
+    height: 150px;
+    width: 400px;
+    display: inline-block;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+#fallInLove {
+    position: relative;
+    top: 50px;
+}
+
+#fallInLove h3 {
+    position: relative;
+    top: 50px;
+    color: #333333;
+    text-align: center;
+}
+
+#fallInLove p {
+    text-align: center;
+    position: relative;
+    left: 4px;
+    top: 35px;
+    font-weight: 400;
+
+}
+
+#fallInLove div {
+    display: inline-block;
+    position: relative;
+    padding: 0px 30px;
+    right: 150px;
+    top: 60px;
+    text-align: center;
+}
+
+.indexPics {
+    height: 150px;
+    width: 187px;
+    filter: drop-shadow(0.5px 1px 1px #666);
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.indexPicsText {
+    text-decoration: none;
+    color: #333333 !important;
+}
+
+#fallInLove div :hover {
+    transition: 1s;
+    height: 165px;
+    width: 206px;
+}
+
+/* פילאטיס - pilatis */
+
+#pilatisTitle {
+position: relative;
+right: 100px;
+}
+
+#pilatisText {
+    position: relative;
+    top: 90px;
+    width: 500px;
+}
+
+#pilatisPicture {
+    float: left;
+    height: 300px;
+    margin-left: 90px;
+    position: relative;
+    top: 65px;
+    left: 50px;
+    filter: drop-shadow(0.5px 1px 1px #666);
+}
+
+#pilatisText p {
+    position: relative;
+    bottom: 15px;
+    right: 100px;
+}
+
+#pilatisBenefits {
+    position: relative;
+    top: 200px;
+    border-radius: 15px;
+
+}
+
+#pilatisBenefitsTitle {
+    position: relative;
+    right: 520px;
+}
+
+.pilatisH3 {
+    color: #B0714E;
+    font-size: 1.5vw;
+    position: relative;
+    bottom: 20px;
+}
+
+.pilatisIcon {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    right: 190px;
+}
+
+#pilatisBenefits p {
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    width: 450px;
+}
+
+#pilatisBenefits section {
+    display: inline-block;
+    padding-right: 110px;
+}
+
+#pilatisVideo {
+    position: relative;
+    top: 200px;
+    right: 350px;
+    filter: drop-shadow(0.5px 1px 1px #666);
+}
+
+#videoTitle {
+    position: relative;
+    top: 200px;
+    right: 520px;
+}
+
+/* אודות - about */
+
+#aboutUsTitle {
+    top: 100px;
+    right: 100px;
+}
+
+.abouttext h2 {
+    padding-top: 80px;
+}
+
+.abouttext {
+    width: 500px;
+    position: relative;
+    right: 100px;
+    top: 90px;
+    padding-bottom: 30px;
+}
+
+#abouttext3 {
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+.abouttext li {
+    padding: 7px;
+    position: relative;
+    left: 250px;
+}
+
+#aboutPicture {
+    float: left;
+    height: 300px;
+    margin-left: 90px;
+    position: relative;
+    top: 65px;
+    left: 50px;
+    filter: drop-shadow(0.5px 1px 1px #666);
+}
+
+#HITlogo {
+    width: 100px;
+    height: 80px;
+}
+
+/* מפת האתר - siteMap */
+.siteMap {
+    position: relative;
+    top: 100px;
+    left: 140px;
+    width: 2000px;
+}
+
+.mainPages{
+    font-weight: bold;
+    color: #B57352 !important;
+    display: inline-block;
+
+}
+
+.mainPages:hover {
+    font-size: 105%;
+
+}
+
+.subPages {
+    color: #333333;
+    position: absolute;
+    left: 200px;
+}
+
+.subPages:hover {
+    font-size: 105%;
+}
+    
+
+/* הצוות שלנו - ourTeam */
+
+.ourTeamText{
+    position: relative;
+    right: 150px;
+    top: 100px;
+    width: 500px;
+    line-height: 150%;
+    padding-bottom: 200px;
+}
+
+.line {
+    border-bottom: 1px solid #B57352;
+    width: 1000px;
+    position: relative;
+    right: 100px;
+    padding: 5px 0px;
+}
+
+.leftText {
+    position: relative;
+    right: 550px;
+}
+
+
+#yuval {
+    top: 150px;
+    right: 750px;
+}
+
+#bar {
+    top: 545px;
+    right: 150px;
+}
+
+#shoval {
+    top: 960px;
+    right: 750px;
+}
+
+#roni {
+    top: 1380px;
+    right: 150px;
+}
+
+.ourTeamPictures {
+    height: 300px;
+    filter: drop-shadow(0.5px 1px 1px #666);
+    position: absolute;
+
+}
+
+#ourTeam h2 {
+    color: #B57352;
+}
+
+/* צור קשר - contactUs */
+
+.send {
+    background-color: #F4E9E3;
+    color: #333333;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0.5px 1px 1px #666);
+    padding: 5px 20px;
+    text-align: center;
+    transition: 0.5s;
+    
+}
+
+.send:hover {
+    font-weight: bold;
+    transition: 0.5s;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 1.5vw;
+    }
+
+#contactUs h2 {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 3vw;
+}
+
+#contactUs form {
+    position: relative;
+    top: 100px;
+    right:150px;
+    background-color: #B57352;
+    color: #F4F0EE;
+    width: 280px;
+    border-radius: 15px;
+    padding: 50px;
+    filter: drop-shadow(0.5px 1px 1px #666);
+}
+
+.squares {
+    color: #333333;
+}
+
+#contactUsPic {
+    height: 450px;
+    position: relative;
+    right: 600px;
+    bottom: 490px;
+    filter: drop-shadow(0.5px 1px 1px #666);
+    border-radius: 15px;
+}
+
+#socialMedia li {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    bottom: 470px;
+    right: 375px;
+}
+
+#socialMedia li img{
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+}
+
+#socialMedia li img:hover {
+    height: 55px;
+    width: 55px;
+    transition: 0.5s;
+}
+
+/* חנות */
+
+#size img {
+    height: 60px;
+    width: 60px;
+    padding: 7px;
+    opacity: 20%;
+}
+
+#size {
+    border: solid 4px #B57352;
+    bottom: 490px;
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    right: 700px;
+    bottom: 900px;
+    width: 387px;
+}
+
+
+.shirt_img {
+    position: absolute;
+    height: 200px;
+    width: 180px;
+    right: 115px;
+    opacity: 0;
+}
+
+#shirts {
+    position: relative;
+    border: solid 4px #B57352;
+    padding: 15px;
+    border-radius: 15px;
+    width: 387px;
+    height: 200px;
+    right: 700px;
+    bottom: 850px;
+}
+
+#products img {
+    width: 120px;
+    height:120px;
+    opacity: 0.2;
+}
+
+.rows {
+    display: inline-block;
+}
+
+#products {
+    position: relative;
+    right: 700px;
+    bottom: 950px;
+    position: relative;
+    border: solid 4px #B57352;
+    padding: 15px;
+    border-radius: 15px;
+    width: 387px;
+}
+
+#shop {
+    line-height: 150%;
+}
+
+#submitButton {
+    background-color: #F4E9E3;
+    color: #333333;
+    border-radius: 15px;
+    border: none;
+    filter: drop-shadow(0.5px 1px 1px #666);
+    padding: 5px 20px;
+    text-align: center;
+    opacity: 0.5;
+}

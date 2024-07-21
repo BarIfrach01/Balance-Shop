@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>באלאנס - צרי קשר</title>
+    <meta name="description" content="עמוד צור קשר של האתר באלאנס" />
+    <meta name="keywords" content="צור קשר, טופס, שלח" />
+    <meta name="author" content="שובל גרבלי,בר יפרח,יובל קלברינו,רוני שטח" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link rel="icon" href="images/lady.png" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body>
+    <div id="contactUs">
+        <header>
+            <nav aria-label="mainNav" class="mainNav">
+                <ul>
+                    <li><a class="navLinks" href="index.html"> <img id="logo" src="images/logo.png" alt="באלאנס לוגו" /></a></li>
+                    <li>
+                        <a href="#" class="notActive navLinks">האימונים שלנו </a>
+
+                        <ul>
+                            <li><a class="navLinks" href="pilatis.html"> פילאטיס</a></li>
+                            <li class="notActive"><a class="navLinks notActive" href="#">עיצוב וחיטוב</a></li>
+                            <li class="notActive"><a class="navLinks notActive" href="#">יוגה</a></li>
+                            <li class="notActive"><a class="navLinks notActive" href="#">אירובי</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navLinks" href="#"> מערכת שעות </a>
+                        <ul>
+                            <li class="notActive"><a href="#" class="notActive navLinks">שעות פעילות</a></li>
+                            <li class="notActive"><a href="#" class="notActive navLinks">לוח חוגים</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="notActive navLinks">ליווי אישי</a>
+                        <ul>
+                            <li class="notActive"><a href="#" class="notActive navLinks">תוכנית אימונים</a></li>
+                            <li class="notActive"><a href="#" class="notActive navLinks">ייעוץ תזונתי</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navLinks" href="ourTeams.html">הצוות שלנו</a>
+
+                    </li>
+                    <li>
+                        <a class="navLinks" href="ourShop.html">חנות</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="pagesH1">צרי קשר</h1>
+
+            <nav aria-label="breadCrumbsNav" class="BreadcrumbsNav">
+                <ol>
+                    <li><a href="index.html">דף הבית </a></li>
+                    <li>צרי קשר</li>
+                </ol>
+            </nav>
+
+            <h2 class="pagesH2"> את במרחק קליק אחד מלשנות את חייך!</h2> <br />
+
+            <form>
+                <label for="firsrName">
+                    שם פרטי* <br />
+                    <input type="text" class="squares" id="firstName" required /> <br /><br />
+                </label>
+                <label for="lastName">
+                    שם משפחה*
+                    <br />
+                    <input type="text" class="squares" id="lastName" required /> <br /><br />
+                </label>
+                <label for="phoneNumber">
+                    טלפון*
+                    <br />
+                    <input type="text" class="squares" id="phoneNumber" required /> <br /><br />
+                </label>
+                <label for="email">
+                    מייל*
+                    <br />
+                    <input type="email" class="squares" id="email" required /> <br /><br />
+                </label>
+                מתעניינת ב...
+                <br />
+                <select id="myselect" class="squares">
+                    <option value="1" disable selected hidden>נא לבחור ערך</option>
+                    <option value="2">פילאטיס מכשירים</option>
+                    <option value="3">עיצוב וחיטוב</option>
+                    <option value="4">יוגה</option>
+                    <option value="5">אירובי</option>
+                </select> <br /><br />
+                דברים שחשוב שנדע
+                <br />
+                <textarea id="myTextArea" class="squares" rows="5"></textarea><br /><br />
+                <input type="submit" class="send" value="שלח" /><br /><br />
+            </form>
+
+            <img id="contactUsPic" src="images/contactUs/contactUsPicture.jpg" alt="נשים רוקדות בהנאה" />
+
+            <section>
+                <div id="socialMedia">
+                    <ul>
+                        <li><a class="notActive" href="#"><img src="images/contactUs/instagram.png" alt="instagram logo" /></a></li>
+                        <li><a class="notActive" href="#"><img src="images/contactUs/facebook.png" alt="facebook logo" /></a></li>
+                        <li><a class="notActive" href="#"><img src="images/contactUs/whatsapp.png" alt="whatsapp logo" /></a></li>
+                        <li><a class="notActive" href="#"><img src="images/contactUs/x.png" alt="x logo" /></a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="footer">
+            <nav aria-label="footerNav" class="footerNav">
+                <ul>
+                    <li><a class="navLinks navFooterLinks" href="about.html">אודות</a></li>
+                    <li><a class="navLinks navFooterLinks" href="siteMap.html">מפת האתר</a></li>
+                    <li><a class="navLinks navFooterLinks" href="contactUs.html">צרי קשר</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+</body>
+</html>
